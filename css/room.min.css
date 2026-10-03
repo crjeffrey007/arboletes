@@ -296,3 +296,342 @@
     }
 
 }
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+    width: 100%;
+
+    background: #FCD116;
+
+    padding: 90px 0;
+}
+
+
+/* MAIN CONTAINER */
+
+.contact-container {
+    width: min(1200px, calc(100% - 40px));
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   CONTACT FORM
+   ========================================= */
+
+.contact-form {
+    background: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* HEADER */
+
+.contact-header {
+    margin-bottom: 30px;
+}
+
+
+.contact-subtitle {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: #003893;
+}
+
+
+.contact-header h2 {
+    margin: 0 0 15px;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    color: #222222;
+}
+
+
+.contact-header p {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* FORM ROW */
+
+.contact-form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* FIELD */
+
+.contact-field {
+    margin-bottom: 20px;
+}
+
+
+.contact-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #333333;
+}
+
+
+/* INPUTS */
+
+.contact-field input,
+.contact-field textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 4px;
+
+    background: #ffffff;
+
+    padding: 13px 15px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #333333;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.contact-field input {
+
+    height: 48px;
+}
+
+
+.contact-field textarea {
+
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+
+    border-color: #003893;
+
+    box-shadow: 0 0 0 3px rgba(0, 56, 147, 0.08);
+}
+
+
+/* PLACEHOLDER */
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+
+    color: #999999;
+}
+
+
+/* BUTTON */
+
+.contact-button {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 15px 25px;
+
+    background: #003893;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.contact-button:hover {
+
+    background: #CE1126;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   GOOGLE MAP
+   ========================================= */
+
+.contact-map {
+
+    min-height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+.contact-map iframe {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 550px;
+
+    border: 0;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-section {
+
+        padding: 70px 0;
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .contact-map iframe {
+
+        min-height: 450px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+
+        padding: 50px 0;
+
+    }
+
+
+    .contact-container {
+
+        width: calc(100% - 30px);
+
+    }
+
+
+    .contact-form {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .contact-header h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .contact-form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .contact-map iframe {
+
+        min-height: 380px;
+
+    }
+
+}

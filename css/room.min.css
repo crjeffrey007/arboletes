@@ -302,18 +302,23 @@
    ========================================= */
 
 .contact-section {
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 
     background: #FCD116;
 
     padding: 90px 0;
-}
 
+    box-sizing: border-box;
+}
 
 /* MAIN CONTAINER */
 
 .contact-container {
-    width: min(1200px, calc(100% - 40px));
+    width: min(1400px, calc(100% - 60px));
 
     margin: 0 auto;
 
@@ -325,7 +330,6 @@
 
     align-items: stretch;
 }
-
 
 /* =========================================
    CONTACT FORM
